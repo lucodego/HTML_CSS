@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: gray;
+            margin: 0px;
+            text-align: justify;
+        }
+        h1{
+            background-color: grey;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black;
+            font-weight: bolder;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            /*Commeça de cima na esquerda rodando no sentido horário
+            Posso também colocar duas marcações sendo intercalado nas pontas
+            */
+        } 
+        nav{
+            background-color: lightgray;
+            padding: 3px;
+            box-shadow: 1px 1px 3px black;
+            /*box-shadow: Deslocamento-vertical Deslocamento-horizontal Espalhamento Cor*/
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 50px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        article{
+            background-color: lightgray;
+        }
+        .txt{
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+        }
+        article > aside{
+            background-color: rgb(139, 139, 139);
+        }
+        footer{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #bola{
+            margin-top: 10px;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50px;
+            margin-left: 100px;
+        }
+        .bol{
+            margin-top: 2px;
+            margin-left: 2px;
+        }
+        picture{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <picture>
+        <img src="#" alt="img">
+    </picture>
+    <header>
+        <h1 style="text-align: center;">Meu site</h1>
+        <nav>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem nisi amet, blanditiis deserunt dolores reiciendis ad laudantium magni id alias excepturi natus repellat. Similique, beatae minima provident nostrum itaque temporibus!</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias</h2>
+                <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quis enim, quae dolorem ex repellat neque incidunt praesentium nulla maxime aliquid molestiae temporibus nesciunt cumque, earum quos porro saepe cupiditate.</p>
+                <aside>
+                    <p>Artigo escrito por Lucas</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por Lucas Godoi</p>
+    </footer>
+    <div id="bola"><p class="bol">Uma bola</p></div>
+</body>
+</html>

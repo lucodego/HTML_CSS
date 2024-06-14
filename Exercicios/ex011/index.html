@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médias em html 5 </title>
+</head>
+<body>
+    <h1>imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">  
+        <img src="imagens/foto-p.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+   <audio preload="metadata" controls loop>
+        <source src="midia/Sinto Fluir - Marcelo Markes + Casa Worship (Julliany Souza).mp3" type="audio/mpeg">
+        <source src="midia/Sinto Fluir - Marcelo Markes + Casa Worship (Julliany Souza).ogg" type="audio/ogg">
+        <source src="midia/Sinto Fluir - Marcelo Markes + Casa Worship (Julliany Souza).wav" type="audio/wav">
+        <p>infeflizmente seu navegador não suporta arquivos de musica, mas você pode baixar <a href="midia/Sinto Fluir - Marcelo Markes + Casa Worship (Julliany Souza).mp3">clicando aqui</a></p>
+   </audio>    
+</body>
+</html>

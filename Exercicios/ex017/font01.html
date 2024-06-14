@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+    @font-face {
+            font-family: Viking;
+            src: url(../ex018/fontes/Deadknight.otf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+    }
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /*Medidas absolutas: cm, mm, in(polegada), pt(ponto), px(pixel), pc(paica)
+            medidas relativas:em(relativa ao tamanho atual da fonte (M maiusculo)), ex(relativa a altura x), rem(relativo a fonte do body), vw(largura da viewport(tamanho da tela)),vh(altura da viewporte), %
+            Recomendadas pela W3C PX ou EM
+            16px geralmente = 1em
+            weight, width, height
+            Para weight usa-se ligther, normal, bold, bolder (para algumas fontes) ou por numeração de 100 até o 900
+            */
+        }
+        h1{
+            
+            /*mais usadas(shorthand font)
+            -font-style->font-weight->font-size->font-family
+            font-size: 3em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 3em;
+            font-style: italic;
+            */
+            font: italic bold 3em Viking;
+            
+        }
+    </style>
+</head>
+<body> 
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet expedita libero, dolorum natus quaerat similique, quia atque commodi sed, pariatur ipsum. Nisi vel incidunt modi illum magni nam non nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi mollitia vel eum, neque ut, illum deserunt itaque ratione laudantium, architecto repudiandae non velit assumenda omnis saepe? In, eveniet? Iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cupiditate nulla delectus corrupti placeat sit doloremque similique, consectetur impedit, quis aut debitis veritatis. Voluptatum, et deserunt nihil officia delectus numquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam aliquam impedit sit eius. Odit necessitatibus nemo velit voluptatum, laborum labore quas provident cumque ad, numquam eius illo facilis a nam?</p>
+    <h2>Subtítulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam, iure, laudantium minus corrupti provident officia vitae voluptatibus error praesentium culpa illum facere quaerat iste consequatur! Aliquid inventore culpa eaque?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita neque porro pariatur ab autem quo, nemo harum amet quia veniam aspernatur quibusdam, totam dolores minus odio iusto numquam nostrum qui?</p>
+</body>
+</html>
