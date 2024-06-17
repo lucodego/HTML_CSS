@@ -1,0 +1,40 @@
+imagens sem direitos autorais:
+
+• UnSplash
+• Pexels
+• FreePik
+• Rawpixel
+• Pixabay
+• Libreshot
+• Wikimedia Commons
+
+ícones 
+para desenhar
+favicon.cc
+para gerar 
+favicon.io
+
+link para tipos de downloads
+https://www.iana.org/assignments/media-types/media-types.xhtml#application
+
+link para áudios grátis
+https://studio.youtube.com/channel/UCfJ2U7KKfnC0SSjEqGTvlag/music
+
+Tratamento de cores
+
+adobe color
+https://color.adobe.com/pt/#
+
+patetton
+https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
+
+coolors(para perdidos)
+https://coolors.co/fc6dab-e3d26f-592e83-6cd4ff-251101
+
+fontes combinações seguras
+https://www.w3schools.com/cssref/css_websafe_fonts.php
+
+Identificar fontes
+https://www.whatfontis.com/?s2i#
+https://www.fontsquirrel.com/
+https://www.myfonts.com/
