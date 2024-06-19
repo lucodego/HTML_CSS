@@ -7,10 +7,24 @@
     <style>
         body{
             height: 97vh;
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-repeat: no-repeat;
-            background-position: center center;
+            /*
+            Com background-attachment se usa o scroll(padrão) onde a imagem some com a rolagem ou posso usar o fixed onde a imagem se move com a rolagem 
+            *background-attachment: fixed;
+            *background-color: black;
+            *background-image: url(imagens/wallpaper002.jpg);
+            *background-repeat: no-repeat;
+            *background-position: center center;
+            *background-size: cover;
+            posso usar taamnho em px ou % e também posso usar contain para a imagem caber só que formando faixas em na vertical ou horizontal
+            E também o cover para a imagem se adaptar porém cortando parteda imagem
+            -Se o texto for muito grande ao tamanho máximo da imagem ele corta e repete ou fica somente a cor do background
+            */
+
+            /*Shorthand - background
+                1º-color > 2º-img > 3º-position > 4º-repeat > 5º[size] >  6ºattachment
+                o size está no manual mas em testes não funciona
+            */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed; 
             background-size: cover;
         }
         main{
@@ -26,7 +40,7 @@
 <body>
     <main>
         <h1>Teste de imagens</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, veniam dignissimos? Voluptatum ad nesciunt eum aspernatur quia unde consectetur ducimus libero deleniti vero debitis, inventore id neque excepturi in Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa voluptates mollitia, voluptatibus et, repellendus ab molestiae porro atque tempore vero. Similique voluptates assumenda, exercitationem praesentium quae itaque laboriosam. Ducimus.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloremque quod voluptate, tempora rerum harum deleniti iure, eveniet voluptatum sunt nesciunt eaque fugiat et odit dolorem, delectus voluptatem voluptates porro.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, veniam dignissimos? Voluptatum ad nesciunt eum aspernatur quia unde consectetur ducimus libero deleniti vero debitis, inventore id neque excepturi in Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa voluptates mollitia, voluptatibus et, repellendus ab molestiae porro atque tempore vero. Similique voluptates assumenda, exercitationem praesentium quae itaque laboriosam. Ducimus.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloremque quod voluptate, tempora rerum harum deleniti iure, eveniet voluptatum sunt nesciunt eaque fugiat et odit dolorem, delectus voluptatem voluptates porro. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, veniam dignissimos? Voluptatum ad nesciunt eum aspernatur quia unde consectetur ducimus libero deleniti vero debitis, inventore id neque excepturi in Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa voluptates mollitia, voluptatibus et, repellendus ab molestiae porro atque tempore vero. Similique voluptates assumenda, exercitationem praesentium quae itaque laboriosam. Ducimus.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloremque quod voluptate, tempora rerum harum deleniti iure, eveniet voluptatum sunt nesciunt eaque fugiat et odit dolorem, delectus voluptatem voluptates porro.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, veniam dignissimos? Voluptatum ad nesciunt eum aspernatur quia unde consectetur ducimus libero deleniti vero debitis, inventore id neque excepturi in Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa voluptates mollitia, voluptatibus et, repellendus ab molestiae porro atque tempore vero. Similique voluptates assumenda, exercitationem praesentium quae itaque laboriosam. Ducimus.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloremque quod voluptate, tempora rerum harum deleniti iure, eveniet voluptatum sunt nesciunt eaque fugiat et odit dolorem, delectus voluptatem voluptates porro.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, veniam dignissimos? Voluptatum ad nesciunt eum aspernatur quia unde consectetur ducimus libero deleniti vero debitis, inventore id neque excepturi in Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa voluptates mollitia, voluptatibus et, repellendus ab molestiae porro atque tempore vero. Similique voluptates assumenda, exercitationem praesentium quae itaque laboriosam. Ducimus.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloremque quod voluptate, tempora rerum harum deleniti iure, eveniet voluptatum sunt nesciunt eaque fugiat et odit dolorem, delectus voluptatem voluptates porro.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, veniam dignissimos? Voluptatum ad nesciunt eum aspernatur quia unde consectetur ducimus libero deleniti vero debitis, inventore id neque excepturi in Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa voluptates mollitia, voluptatibus et, repellendus ab molestiae porro atque tempore vero. Similique voluptates assumenda, exercitationem praesentium quae itaque laboriosam. Ducimus.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloremque quod voluptate, tempora rerum harum deleniti iure, eveniet voluptatum sunt nesciunt eaque fugiat et odit dolorem, delectus voluptatem voluptates porro.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, veniam dignissimos? Voluptatum ad nesciunt eum aspernatur quia unde consectetur ducimus libero deleniti vero debitis, inventore id neque excepturi in Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa voluptates mollitia, voluptatibus et, repellendus ab molestiae porro atque tempore vero. Similique voluptates assumenda, exercitationem praesentium quae itaque laboriosam. Ducimus.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloremque quod voluptate, tempora rerum harum deleniti iure, eveniet voluptatum sunt nesciunt eaque fugiat et odit dolorem, delectus voluptatem voluptates porro.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, veniam dignissimos? Voluptatum ad nesciunt eum aspernatur quia unde consectetur ducimus libero deleniti vero debitis, inventore id neque excepturi in Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa voluptates mollitia, voluptatibus et, repellendus ab molestiae porro atque tempore vero. Similique voluptates assumenda, exercitationem praesentium quae itaque laboriosam. Ducimus.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloremque quod voluptate, tempora rerum harum deleniti iure, eveniet voluptatum sunt nesciunt eaque fugiat et odit dolorem, delectus voluptatem voluptates porro.</p>
     </main>
 </body>
 </html>
