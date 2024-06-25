@@ -11,48 +11,84 @@
         table{
             border-collapse: collapse;
         }
-        td, th{
+        td, th.area{
             border: 1px solid black;
             padding: 10px;
+            color: black;
+            background-color: white;
+        }
+        th.materia{
+            border: 1px solid black;
+            padding: 10px;
+            color: black;
+            background-color: white;
+            font-weight: normal;
+        }
+        th{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: gray;
+            color: white;
         }
     </style>
 </head>
 <body>
     <table>
         <tr>
-            <th rowspan="2">Área</th>
-            <th rowspan="2">Disciplinas</th>
-            <th colspan="2">Notas</th>
-            <th rowspan="2">Média</th>
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplinas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
         </tr>
         <tr>
-            <th>Nota 1</th>
-            <th>Nota 2</th>
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
         </tr>
         <tr>
-            <th>Exatas</th>
-            <td>Mátematica</td>
+            <th class="area" rowspan="4" scope="rowgroup">Exatas</th>
+            <th class="materia" scope="row">Mátematica</th>
             <td>0.0</td>
             <td>0.0</td>
             <td>0.0</td>
         </tr>
         <tr>
-
+            <th class="materia" scope="row">Física</th>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
         </tr>
         <tr>
-
+            <th class="materia" scope="row">Química</th>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
         </tr>
         <tr>
-
+            <th class="materia" scope="row">Biologia</th>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
         </tr>
         <tr>
-
+            <th colspan="4" scope="row">Média de Exatas</th>
+            <th>0.0</th>
         </tr>
         <tr>
-
+            <th class="area" rowspan="2" scope="rowgroup">Humanas</th>
+            <th class="materia" scope="row">Hístoria</th>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
         </tr>
         <tr>
-
+            <th class="materia" scope="row">Geografia</th>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th colspan="4" scope="row">Média de Humanas</th>
+            <th>0.0</th>
         </tr>
     </table>
 </body>
