@@ -3,3 +3,21 @@
 /*
 Todos as telas
 */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+h1{
+    color: whitesmoke;
+    text-shadow: 3px 3px 0px  #1324a0;
+    padding: 10px;
+}
