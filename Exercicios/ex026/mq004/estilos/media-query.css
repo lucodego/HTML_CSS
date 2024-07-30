@@ -13,7 +13,29 @@ pesquisar no W3C atualmente
 */
 
 @media print{
-
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg); /*Desnecessário*/
+    }
+    main{
+        border: 2px solid black;
+    }
+    main::after{
+        content: "Essa impressão foi feita por Lucas Godoi";
+        text-decoration: overline;
+        font-size: 65%;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
 }
 /*Não é necessário estilizar para celulares pois o site está sendo desenvolvido em mobile first*/
 @media screen and (min-width:768px) and (max-width: 992px){ /*Media para tablets*/
