@@ -6,13 +6,12 @@
     padding: 0px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-body,html{
+body{
     background-color: rgb(211, 209, 209);
-    height: 98vh;
-    width: 98vw;
 }
 header{
     background-color: rgb(170, 170, 170);
+    width: 100%;
 }
 header h1{
     text-align: center;
@@ -29,6 +28,7 @@ span#burguer:hover{
     background-color: white;
     color: black;
     cursor: pointer;
+    transition: 0.2s;
 }
 menu{
     display: none;
@@ -43,15 +43,15 @@ menu ul li a {
     text-decoration: none;
     text-align: center;
     color: white;
-    border-top: 2px solid gray;
+    
 }
 menu ul li a:hover{
     background-color: rgb(204, 204, 204);
     color: gray;
-    
+    transition: 0.3s;
 }
 main{
-    width: 80vw;
+    width: 90vw;
     margin: auto;
     background-color: white;
     margin-top: 10px;

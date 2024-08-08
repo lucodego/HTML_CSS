@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/mq.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
@@ -31,6 +31,13 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laudantium ratione! Similique nam fugiat, odio repudiandae neque distinctio ad cumque quas soluta pariatur voluptates tempora voluptatum dolor perspiciatis voluptatem totam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore error obcaecati blanditiis esse cumque repellendus doloremque corrupti sed molestiae nihil aperiam non facilis quibusdam sit, ex ab dolores neque labore!</p>
     </main>
     <script>
+        function mudouTamanho() {
+            if(window.innerwidth >= 768){
+                itens.style.display = "block"
+            }   else{
+                itens.style.display = "none"
+            }
+        }
         function clickMenu() {
             if (itens.style.display == "block"){
                 itens.style.display = "none"
