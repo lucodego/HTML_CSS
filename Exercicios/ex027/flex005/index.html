@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
+    <title>Flexible Box centralizado</title>
     <style>
-        div.container{
-            background-color: lightgray;
-            display: flex;
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
         }
-        div.item{
-            background-color: lightblue;
-            border: 1px solid black;
-            flex: auto;
+        body{
+            background-color: lightsalmon;
+        }
+        main{
+            background-color: lightgreen;
+            height: 100vh;
+            width: 100vw;
+            
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            background-color: lightseagreen;
+            height: 200px;
+            width: 200px;
         }
     </style>
 </head>
