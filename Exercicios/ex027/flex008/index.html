@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
+        .body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         div.container{
-            background-color: rgb(248, 144, 144);
+            background-color: rgba(248, 144, 144, 0.418);
             width: 400px;
             height: 180px;
             display: flex;
@@ -37,7 +42,7 @@
 
     </style>
 </head>
-<body>
+<body class="body">
     <div class="container">
         <div class="item" id="i1">A</div>
         <div class="item" id="i2">B</div>
