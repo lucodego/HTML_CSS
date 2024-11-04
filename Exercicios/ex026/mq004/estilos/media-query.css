@@ -30,7 +30,7 @@ pesquisar no W3C atualmente
     main h1 {
         text-shadow: none;
         color: black;
-    }
+    } 
     img#phone{display: none;}
     img#tablet{display: none;}
     img#print{display: block;}
